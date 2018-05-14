@@ -2,6 +2,9 @@ module Main where
 
 import List
 import ListContinued
+import ListAgain
 
 main :: IO ()
-main = putStrLn . show $ removeAt 12 "0123456789"
+main = do
+    -- xs <- randomPermutation "abcdef"
+    putStrLn . show $ combinations 4 "abcde"
